@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 
 public class teste{
   public static void main(String[]args){
