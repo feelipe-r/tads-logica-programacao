@@ -22,6 +22,6 @@ public class l01_ex09{
 
         qnt_t = (qnt_t+mrg);
 
-        System.out.println("Quantidade total de carne a ser comprada: "+qnt_t+" Gamas");
+        System.out.println("Quantidade total de carne a ser comprada: "+qnt_t+" Gramas");
     }
 }
