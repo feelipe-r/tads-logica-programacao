@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class l2e6{
+public class l2e06{
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
 
@@ -12,9 +12,5 @@ public class l2e6{
         int live = ((a*365)+(m*30)+d);
 
         System.out.println("Dias vividos: "+live);
-
-
-
-
     }
 }
