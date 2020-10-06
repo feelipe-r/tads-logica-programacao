@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class l2e4{
+public class l2e04{
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
 
