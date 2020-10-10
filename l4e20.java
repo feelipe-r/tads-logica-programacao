@@ -16,6 +16,7 @@ public class l4e20{
             }
             System.out.println("*");
             ay++;
+            ax=1;
         }
     }
 }
