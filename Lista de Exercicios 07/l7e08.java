@@ -24,10 +24,8 @@ public class l7e08{
                 aux2--;
             }
         }
-        rest = (soma%11);
-        rest = (11-rest);
-        rest2 = (soma2%11);
-        rest2 = (11-rest2);
+        rest = (11-(soma%11));
+        rest2 = (11-(soma2%11));
 
         if((rest<10)&&(cpf[9]==rest)){
             a++;
