@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class l8e08{
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
-        int[] vetor = new int[6];
+        int[] vetor = new int[20];
         int e, maior=0, menor=0, igual=0;
 
         for(int i=0; i<vetor.length; i++){
