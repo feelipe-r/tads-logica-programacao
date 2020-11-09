@@ -18,11 +18,13 @@ public class l8e13{
                 System.out.print(vetor[i]+" ");
             }
         }
-        System.out.println("\nInforme duas posições do vetor");
-        x = sc.nextInt();
-        y = sc.nextInt();
+        while((x>=0)&&(y>=0)){
+            System.out.println("\nInforme duas posições do vetor:");
+            x = sc.nextInt();
+            y = sc.nextInt();
 
-        soma = (vetor[x]+vetor[y]);
-        System.out.println("Soma dos valores nas posições informadas: "+soma);
+            soma = (vetor[x]+vetor[y]);
+            System.out.println("Soma dos valores nas posições informadas: "+soma);
+        }
     }
 }
