@@ -5,7 +5,6 @@ public class l9e12{
         Scanner sc = new Scanner(System.in);
         char[][] tab = new char[3][3];
         int x, y, play = 0;
-        int a = 0, b = 0;
 
         System.out.println("Jogador 1 = X\nJogador 2 = O");
 
@@ -39,6 +38,51 @@ public class l9e12{
                 }
                 System.out.print("|\n\n");
             }
+            for(int i=0; i<tab.length; i++){
+                if((tab[i][0]=='X')&&(tab[i][1]=='X')&&(tab[i][2]=='X')){
+                    System.out.println("Jogador 1 venceu!");
+                    play = 5;
+                    break;
+                }
+                else if((tab[i][0]=='O')&&(tab[i][1]=='O')&&(tab[i][2]=='O')){
+                    System.out.println("Jogador 2 venceu!");
+                    play = 5;
+                    break;
+                }
+            }
+            for(int i=0; i<tab.length; i++){
+                if((tab[0][i]=='X')&&(tab[1][i]=='X')&&(tab[2][i]=='X')){
+                    System.out.println("Jogador 1 venceu!");
+                    play = 5;
+                    break;
+                }
+                else if((tab[0][i]=='O')&&(tab[1][i]=='O')&&(tab[2][i]=='O')){
+                    System.out.println("Jogador 2 venceu!");
+                    play = 5;
+                    break;
+                }
+            }
+            if((tab[0][0]=='X')&&(tab[1][1]=='X')&&(tab[2][2]=='X')){
+                System.out.println("Jogador 1 venceu!");
+                play = 5;
+                break;
+            }
+            else if((tab[0][0]=='O')&&(tab[1][1]=='O')&&(tab[2][2]=='O')){
+                System.out.println("Jogador 2 venceu!");
+                play = 5;
+                break;
+            }
+            if((tab[0][2]=='X')&&(tab[1][1]=='X')&&(tab[2][0]=='X')){
+                System.out.println("Jogador 1 venceu!");
+                play = 5;
+                break;
+            }
+            else if((tab[0][0]=='O')&&(tab[1][1]=='O')&&(tab[2][2]=='O')){
+                System.out.println("Jogador 2 venceu!");
+                play = 5;
+                break;
+            }
+            
             if(play<4){
 
                 System.out.println("Jogador 2:\nInforme uma linha e uma coluna para jogar:");
@@ -72,26 +116,48 @@ public class l9e12{
                     System.out.print("|\n\n");
                 }
                 for(int i=0; i<tab.length; i++){
-                    for(int j=0; j<tab[0].length; j++){
-                        if(tab[i][j]=='X'){
-                            a++;
-                        }
-                        else if(tab[i][j]=='O'){
-                            b++;
-                        }
-                    }
-                    if((a==3)||(b==3)){
-                        if(a==3){
-                            System.out.println("Jogador 1 Venceu!");
-                        }
-                        else if(b==3){
-                            System.out.println("Jogador 2 venceu!");
-                        }
+                    if((tab[i][0]=='X')&&(tab[i][1]=='X')&&(tab[i][2]=='X')){
+                        System.out.println("Jogador 1 venceu!");
                         play = 5;
                         break;
-                    }else{
-                        a=b=0;
                     }
+                    else if((tab[i][0]=='O')&&(tab[i][1]=='O')&&(tab[i][2]=='O')){
+                        System.out.println("Jogador 2 venceu!");
+                        play = 5;
+                        break;
+                    }
+                }
+                for(int i=0; i<tab.length; i++){
+                    if((tab[0][i]=='X')&&(tab[1][i]=='X')&&(tab[2][i]=='X')){
+                        System.out.println("Jogador 1 venceu!");
+                        play = 5;
+                        break;
+                    }
+                    else if((tab[0][i]=='O')&&(tab[1][i]=='O')&&(tab[2][i]=='O')){
+                        System.out.println("Jogador 2 venceu!");
+                        play = 5;
+                        break;
+                    }
+                }
+                if((tab[0][0]=='X')&&(tab[1][1]=='X')&&(tab[2][2]=='X')){
+                    System.out.println("Jogador 1 venceu!");
+                    play = 5;
+                    break;
+                }
+                else if((tab[0][0]=='O')&&(tab[1][1]=='O')&&(tab[2][2]=='O')){
+                    System.out.println("Jogador 2 venceu!");
+                    play = 5;
+                    break;
+                }
+                if((tab[0][2]=='X')&&(tab[1][1]=='X')&&(tab[2][0]=='X')){
+                    System.out.println("Jogador 1 venceu!");
+                    play = 5;
+                    break;
+                }
+                else if((tab[0][0]=='O')&&(tab[1][1]=='O')&&(tab[2][2]=='O')){
+                    System.out.println("Jogador 2 venceu!");
+                    play = 5;
+                    break;
                 }
             }
             play++;
